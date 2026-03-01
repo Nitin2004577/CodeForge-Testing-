@@ -1,12 +1,11 @@
-import { FC } from 'react';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { App } from './App';
 
-import './style.css';
+const root = createRoot(document.getElementById('app'));
 
-export const App: FC<{ name: string }> = ({ name }) => {
-  return (
-    <div>
-      <h1>Hello {name}!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
-  );
-};
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
