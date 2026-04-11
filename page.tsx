@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 
 export default function ProfessionalDashboard() { 
-  const [activeTab, setActiveTab] = useState('Overview');
+  const [activeTab, setActiveTab] = useState('Overview'); 
 
   // Reliable Unsplash images with good CORS headers for WebContainers
   const teamImages = [
